@@ -1,6 +1,5 @@
 import throttle from 'lodash.throttle';
 
-// const FEEDBACK_FORM_STATE = 'feedback-form-state';
 const form = document.querySelector('form.feedback-form');
 
 // creating const for catching errors
@@ -30,7 +29,7 @@ const removeKey = key => {
   }
 };
 
-// hadling event with lodash.throttle
+// handling event with lodash.throttle
 form.addEventListener('input', throttle(saveValue, 500));
 
 // event delegate and creating object for listening form
